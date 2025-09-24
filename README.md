@@ -101,3 +101,7 @@ Esses três componentes formam um ecossistema integrado na automação:
 3. O **SCADA** monitora tudo: ele se comunica com o CLP para visualizar o status do motor e outras variáveis, além de permitir que um operador mude a velocidade do motor de forma remota.
 
 Em resumo, o CLP é o responsável pela lógica local, o inversor cuida da velocidade e o SCADA fornece a visão e o controle global. Juntos, eles garantem a eficiência e o controle total sobre qualquer processo industrial.
+
+
+
+## Feito por Gustavo, Gabriel Conrado e Daniele
