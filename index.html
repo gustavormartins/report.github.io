@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CLP e SCADA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>CLP e SCADA</h1>
+  </header>
+  <main>
+    <section id="plc">
+      <h2>Controladores Lógicos Programáveis (CLPs)</h2>
+      <div id="plc-funcionamento">
+        <p>O CLP (Controlador Lógico Programável) é um dispositivo eletrônico usado para automatizar processos industriais ou prediais, substituindo sistemas de controle baseados em relés, temporizadores e contatores.</p>
+        <p>Como ele funciona:</p>
+        <ol>
+          <li>Entradas: Recebe sinais de sensores, botões, chaves, etc.</li>
+          <li>Processamento: Um programa interno (criado pelo usuário) define as regras para tomar decisões com base nessas entradas.</li>
+          <li>Saídas: O CLP aciona dispositivos como motores, válvulas, sirenes, luzes, etc., com base no que foi programado.</li>
+        </ol>
+        <p>Exemplo: Se o sensor detectar que uma esteira está cheia → o CLP desliga a esteira automaticamente.</p>
+        <p>O programa geralmente é feito em linguagem ladder, blocos funcionais, ou texto estruturado.</p>
+      </div>
+      <div id="plc-aplicacoes">
+        <p>O CLP é o “cérebro” da automação e pode ser usado em praticamente qualquer processo que envolva controle sequencial, temporizado ou lógico.</p>
+        <p>Exemplos de aplicação:</p>
+        <ul>
+          <li>Indústria: Controle de esteiras, máquinas de envase, robôs. Exemplo: Se a peça estiver na posição correta, o CLP aciona o cilindro pneumático para perfurar.</li>
+          <li>Saneamento: Controle de bombas e válvulas em estações de tratamento. Exemplo: Se o nível do tanque atingir 80%, o CLP aciona a bomba de drenagem.</li>
+          <li>Edifícios inteligentes: Automação de iluminação, elevadores, portões. Exemplo: Se for 18h, acione automaticamente a iluminação do hall.</li>
+          <li>Agronegócio: Irrigação, controle de temperatura em estufas. Exemplo: Se a umidade do solo estiver baixa, ligue a bomba de irrigação.</li>
+        </ul>
+      </div>
+      <div id="plc-fabricantes">
+        <p>Diversas marcas oferecem CLPs para diferentes tipos de aplicação, desde pequenos projetos até grandes sistemas industriais:</p>
+        <table>
+          <tr>
+            <th>Fabricante</th>
+            <th>Modelo/série comum</th>
+            <th>Observações</th>
+          </tr>
+          <tr>
+            <td>Siemens</td>
+            <td>S7-1200 / S7-1500</td>
+            <td>Alta performance, padrão na indústria</td>
+          </tr>
+          <tr>
+            <td>Schneider Electric</td>
+            <td>Modicon M221 / M340</td>
+            <td>Compactos e modulares</td>
+          </tr>
+          <tr>
+            <td>Rockwell (Allen-Bradley)</td>
+            <td>MicroLogix / CompactLogix</td>
+            <td>Muito usados nas Américas</td>
+          </tr>
+          <tr>
+            <td>Mitsubishi</td>
+            <td>FX5U / FX3G</td>
+            <td>Bons para automações médias</td>
+          </tr>
+          <tr>
+            <td>WEG</td>
+            <td>CLIC02 / CLIC Advanced</td>
+            <td>Nacional, custo acessível</td>
+          </tr>
+          <tr>
+            <td>Delta</td>
+            <td>DVP Series</td>
+            <td>Econômico, bom para painéis compactos.</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section id="scada">
+      <h2>Sistemas SCADA</h2>
+      <div id="scada-funcionamento">
+        <p>SCADA significa Supervisory Control and Data Acquisition (Supervisão, Controle e Aquisição de Dados).</p>
+        <p>É um sistema que permite monitorar, controlar e registrar dados de processos industriais ou de infraestrutura (como energia, água, transporte, etc.), geralmente em tempo real, por meio de uma interface gráfica em um computador.</p>
+        <p>Como funciona:</p>
+        <ol>
+          <li>CLPs ou RTUs coletam dados (temperatura, nível, pressão, etc.).</li>
+          <li>Esses dados são enviados para o sistema SCADA (via rede).</li>
+          <li>O SCADA exibe as informações em telas com gráficos, alarmes, animações e botões de comando.</li>
+          <li>O operador pode monitorar o processo e também enviar comandos (ligar/desligar máquinas, ajustar parâmetros).</li>
+        </ol>
+      </div>
+      <div id="scada-aplicacoes">
+        <p>SCADA é usado onde há necessidade de monitoramento em tempo real, registro de dados históricos, alarmes, e intervenção remota.</p>
+        <table>
+          <tr>
+            <th>Setor</th>
+            <th>Aplicações</th>
+            <th>Benefícios</th>
+          </tr>
+          <tr>
+            <td>Energia</td>
+            <td>Subestações, geração e distribuição</td>
+            <td>Monitoramento remoto, alarmes, relatórios</td>
+          </tr>
+          <tr>
+            <td>Saneamento</td>
+            <td>ETA, ETE, redes de bombeamento</td>
+            <td>Visualização de níveis, controle de bombas</td>
+          </tr>
+          <tr>
+            <td>Indústria</td>
+            <td>Linhas de produção, fornos, caldeiras</td>
+            <td>Interface amigável para operadores, análise de dados</td>
+          </tr>
+          <tr>
+            <td>Óleo e Gás</td>
+            <td>Dutos, plataformas offshore</td>
+            <td>Segurança, rastreamento de falhas</td>
+          </tr>
+          <tr>
+            <td>Agronegócio</td>
+            <td>Climatização, irrigação, silos</td>
+            <td>Controle remoto, eficiência no uso de recursos</td>
+          </tr>
+          <tr>
+            <td>Edifícios inteligentes</td>
+            <td>HVAC, iluminação, segurança</td>
+            <td>Centralização do controle em tempo real</td>
+          </tr>
+        </table>
+      </div>
+      <div id="scada-fabricantes">
+        <p>Principais Fabricantes / Softwares SCADA</p>
+        <table>
+          <tr>
+            <th>Fabricante / Software</th>
+            <th>Características</th>
+          </tr>
+          <tr>
+            <td>Siemens WinCC</td>
+            <td>Muito usado com CLPs Siemens, robusto e escalável</td>
+          </tr>
+          <tr>
+            <td>Wonderware (AVEVA System Platform)</td>
+            <td>Um dos mais populares do mundo, interface gráfica poderosa</td>
+          </tr>
+          <tr>
+            <td>Elipse E3 / Elipse SCADA</td>
+            <td>Muito usado no Brasil, ótimo para saneamento e energia</td>
+          </tr>
+          <tr>
+            <td>Supervisório InduSoft</td>
+            <td>Flexível, usado em automação leve</td>
+          </tr>
+          <tr>
+            <td>FactoryTalk View (Rockwell)</td>
+            <td>Integrado com CLPs Allen-Bradley</td>
+          </tr>
+          <tr>
+            <td>Citect SCADA (Schneider)</td>
+            <td>Escalável para grandes sistemas</td>
+          </tr>
+          <tr>
+            <td>Ignition (Inductive Automation)</td>
+            <td>Base web, licença ilimitada por tag/sessão, moderno</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025</p>
+  </footer>
+  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadros com Imagens</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .quadro {
+            width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: white;
+            transition: transform 0.3s ease;
+        }
+        
+        .quadro:hover {
+            transform: scale(1.03);
+        }
+        
+        .quadro img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .conteudo {
+            padding: 15px;
+        }
+        
+        .conteudo h2 {
+            margin-top: 0;
+            color: #333;
+            font-size: 1.4rem;
+        }
+        
+        .conteudo p {
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        .botao {
+            display: inline-block;
+            background-color: #4285f4;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        
+        .botao:hover {
+            background-color: #2d6ad9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Quadro 1 -->
+        <div class="quadro">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQemzDB1uYFLaB_QGCPK8Ga5O37g5TzwFc1Hw&s" alt="CLP">
+            <div class="conteudo">
+                <h2>CLP</h2>
+                <p>é um dispositivo eletrônico robusto, semelhante a um computador, que automatiza, controla e monitora processos e máquinas na indústria. Ele recebe sinais de sensores (entradas), processa-os conforme uma programação (lógica) e envia comandos para atuadores (saídas). O CLP é projetado para suportar ambientes industriais agressivos e pode ser integrado a outros sistemas. </p>
+               <a href="https://pt.wikipedia.org/wiki/Controlador_l%C3%B3gico_program%C3%A1vel#:~:text=Um%20CLP%20%C3%A9%20o%20controlador,dentro%20de%20um%20conjunto%20finito)." class="botao">Saiba mais</a>
+            </div>
+        </div>
+        
+        <!-- Quadro 2 -->
+        <div class="quadro">
+            <img src="https://www.sielcosistemi.com/assets/images/WhatisSCADA2.webp" alt="SCADA">
+            <div class="conteudo">
+                <h2>SCADA</h2>
+                <p>é um sistema de software e hardware que permite o monitoramento e controlo de processos industriais em tempo real, como a geração e distribuição de energia, o tratamento de água, e a indústria petroquímica</p>
+               <a href="https://en.wikipedia.org/wiki/SCADA" class="botao">Saiba mais</a>
+            </div>
+        </div>
+        
+        <!-- Quadro 3 -->
+        <div class="quadro">
+            <img src="https://transmaq.com.br/wp-content/uploads/2020/08/Conheca-os-principais-tipos-de-engrenagens-dos-Redutores-de-Velocidade-Transmaq-6-1024x1024.png" alt="Imagem 3">
+            <div class="conteudo">
+                <h2>Inversor de Frequência</h2>
+                <p>é um equipamento eletrónico que controla a velocidade de um motor elétrico, ajustando a frequência e a tensão da corrente elétrica que lhe é fornecida</p>
+                <a href="https://pt.wikipedia.org/wiki/Inversor_de_frequ%C3%AAncia" class="botao">Saiba mais</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+</body>
+</html>
