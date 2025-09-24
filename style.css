@@ -56,3 +56,12 @@ body {
 h1, p {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+
+.imagem-com-opacidade {
+  opacity: 0.5; /* 50% de opacidade */
+}
+
+
+.imagem-com-opacidade:hover {
+  opacity: 1.0; 
+}
