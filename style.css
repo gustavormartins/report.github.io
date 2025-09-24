@@ -63,7 +63,7 @@ h1, p {
 
 
 .imagem-com-opacidade:hover {
-  opacity: 1.0; 
+  opacity: 0.5; 
 }
 .imagem-com-opacidade {
   opacity: 0.5; 
@@ -71,5 +71,5 @@ h1, p {
 
 
 .imagem-com-opacidade:hover {
-  opacity: 1.0; 
+  opacity: 0.5; 
 }
